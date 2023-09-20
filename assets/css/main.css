@@ -1,0 +1,105 @@
+/* ============= Fonts ============== */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.eot');
+  src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Light.woff2') format('woff2'),
+      url('../fonts/Roboto-Light.woff') format('woff'),
+      url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff'),
+      url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============= General rules ============== */
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #6c757d;
+  --accent-color: #ffffff;
+  --contrast-color: #212529;
+  --contrast-hover-color: #424649;
+  --gray-color: #ccc;
+  --transition: 0.3s;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+main {
+  flex: 1;
+}
+
+.btn, .dropdown-menu, .form-control {
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--contrast-color);
+}
+
+.form-control::placeholder {
+  color: var(--gray-color);
+}
+
+/* ============= Header ============== */
+
+.header__top-social a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__top-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__top-phone a:hover {
+  text-decoration: underline;
+}
+
+.header__logo {
+  text-transform: uppercase;
+  color: var(--contrast-color);
+  transition: var(--transition);
+}
+
+.header__logo:hover {
+  color: var(--contrast-hover-color);
+}
+
+.header__badge {
+  font-size: 10px;
+  top: 5%;
+  left: 75%;
+}

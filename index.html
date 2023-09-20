@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Bootstrap</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__top py-2">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-6 col-sm-4">
+            <div class="header__top-phone">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+375444444444" class="ms-1">+375 (44) 444-44-44</a>
+            </div>
+          </div>
+          <div class="col-sm-4 d-none d-sm-block">
+            <ul class="header__top-social d-flex gap-3 justify-content-center">
+              <li><a href="https://github.com/Jerrext" class="btn btn-dark rounded-circle"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/daniil-kolpakov/" class="btn btn-dark rounded-circle"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://jerrext.github.io/Full-Responsive-CV/" class="btn btn-dark rounded-circle"><i class="fa-solid fa-globe"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="d-flex justify-content-end">
+              <div class="dropdown">
+                <button class="btn btn-sm me-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EN
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                  <li><a class="dropdown-item" href="#">RU</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign In</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__middle bg-white py-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <a href="index.html" class="header__logo h1">E-Shop</a>
+          </div>
+          <div class="col-md-4 order-2 order-md-1 mt-2 mt-md-0">
+            <form action="">
+              <div class="input-group">
+                <input type="text" class="form-control" name="search" placeholder="Searching..." aria-label="Searching..." aria-describedby="button-search">
+                <button class="btn btn-outline-dark" type="submit" id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </form>
+          </div>
+          <div class="col-6 col-md-4 text-end order-1 order-md-2">
+            <a href="#" class="btn fs-4 position-relative">
+              <i class="fa-solid fa-heart"></i>
+              <span class="position-absolute translate-middle-x bg-danger px-1 py-0 border border-light rounded-pill text-light header__badge">3</span>
+            </a>
+            <button class="btn fs-4 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="position-absolute translate-middle-x bg-danger px-1 py-0 border border-light rounded-pill text-light header__badge">5</span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom"></div>
+  </header>
+  <main class="main">sdf</main>
+  <footer class="footer">adsf</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
