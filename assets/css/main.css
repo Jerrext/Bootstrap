@@ -38,6 +38,7 @@ a {
   --contrast-color: #212529;
   --contrast-hover-color: #424649;
   --gray-color: #ccc;
+  --orange-color: #ff9c24;
   --transition: 0.3s;
 }
 
@@ -68,6 +69,33 @@ main {
   color: var(--gray-color);
 }
 
+section:not(.banner) {
+  padding: 50px 0;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  position: relative;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: var(--contrast-color);
+  font-weight: 700;
+}
+
+.section-title span {
+  background-color: var(--bg-color);
+  padding-right: 10px;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  border-bottom: 1px dashed var(--text-color);
+}
+
 /* ============= Header ============== */
 
 .header__top-social a {
@@ -95,11 +123,67 @@ main {
 }
 
 .header__logo:hover {
-  color: var(--contrast-hover-color);
+  color: var(--orange-color);
 }
 
 .header__badge {
   font-size: 10px;
   top: 5%;
   left: 75%;
+}
+
+.header__bottom .nav-item:first-child .nav-link {
+  padding-left: 0;
+}
+
+.header__bottom .nav-link {
+  color: var(--accent-color);
+  transition: var(--transition);
+}
+
+.header__bottom .nav-link:hover {
+  color: var(--orange-color);
+}
+
+.header__bottom .nav-link.active {
+  color: var(--orange-color);
+}
+
+.header__bottom .dropdown-menu {
+  margin-top: 15px;
+}
+
+/* ============= Banner ============== */
+
+.banner__img {
+  object-fit: cover;
+  object-position: center;
+  max-height: 600px;
+}
+
+
+/* ============= Advantegas ============== */
+
+.advantegas .fa-solid {
+  font-size: 2rem;
+  color: var(--orange-color);
+}
+
+.advantegas .item {
+  padding: 20px;
+  box-shadow: 0 0 10px 0px rgba(0,0,0,0.1);
+  transition: var(--transition);
+}
+
+.advantegas .item:hover {
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+}
+
+/* ============= Media ============== */
+
+@media only screen and (min-width: 992px) {
+  .header__bottom .navbar .dropdown-menu {
+    margin-left: 0;
+    border: 0;
+  }
 }

@@ -53,11 +53,11 @@
     </div>
     <div class="header__middle bg-white py-4">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 col-md-4">
+        <div class="row align-items-center">
+          <div class="col-4 col-md-4">
             <a href="index.html" class="header__logo h1">E-Shop</a>
           </div>
-          <div class="col-md-4 order-2 order-md-1 mt-2 mt-md-0">
+          <div class="col-8 col-md-4">
             <form action="">
               <div class="input-group">
                 <input type="text" class="form-control" name="search" placeholder="Searching..." aria-label="Searching..." aria-describedby="button-search">
@@ -65,7 +65,7 @@
               </div>
             </form>
           </div>
-          <div class="col-6 col-md-4 text-end order-1 order-md-2">
+          <div class="col-md-4 text-end d-none d-md-block">
             <a href="#" class="btn fs-4 position-relative">
               <i class="fa-solid fa-heart"></i>
               <span class="position-absolute translate-middle-x bg-danger px-1 py-0 border border-light rounded-pill text-light header__badge">3</span>
@@ -76,7 +76,7 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                <h5 class="offcanvas-title" id="offcanvasLabel">Cart</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
@@ -87,9 +87,158 @@
         </div>
       </div>
     </div>
-    <div class="header__bottom"></div>
   </header>
-  <main class="main">sdf</main>
+  <div class="header__bottom sticky-top">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Catalog</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav py-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Delivery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Catalog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Shoes</a></li>
+                  <li><a class="dropdown-item" href="#">Jeans</a></li>
+                  <li class="nav-item dropend">
+                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                      Sportswear
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Shoes</a></li>
+                      <li><a class="dropdown-item" href="#">Jeans</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coat</a>
+               
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shirts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-block d-md-none">
+          <a href="#" class="btn fs-4 position-relative">
+            <i class="fa-solid fa-heart"></i>
+            <span class="position-absolute translate-middle-x bg-danger px-1 py-0 border border-light rounded-pill text-light header__badge">3</span>
+          </a>
+          <button class="btn fs-4 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="position-absolute translate-middle-x bg-danger px-1 py-0 border border-light rounded-pill text-light header__badge">5</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <main class="main">
+    <section class="banner">
+      <div id="carousel" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/banner-slide3.jpg" class="banner__img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>First slide label</h2>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner-slide1.jpg" class="banner__img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Second slide label</h2>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner-slide2.jpg" class="banner__img d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Third slide label</h2>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="advantegas">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">
+              <span>Benefits</span>
+            </h2>
+          </div>
+        </div>
+        <div class="items">
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+              <div class="item h-100">
+                <p><i class="fa-solid fa-truck-fast"></i></p>
+                <p>Прямые поставки от производителей брендов</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+              <div class="item h-100">
+                <p><i class="fa-solid fa-cubes"></i></p>
+                <p>Широкий ассортимент товаров. Более 10 тыс. наименований</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+              <div class="item h-100">
+                <p><i class="fa-solid fa-hand-holding-dollar"></i></p>
+                <p>Приятные и конкурентные цены</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 col-sm-6">
+              <div class="item h-100">
+                <p><i class="fa-solid fa-user-graduate"></i></p>
+                <p>Консультации от профессионалов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="footer">adsf</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
