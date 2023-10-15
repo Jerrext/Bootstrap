@@ -153,6 +153,14 @@ section:not(.banner) {
   margin-top: 15px;
 }
 
+.navbar-nav {
+  transition: var(--transition);
+}
+
+.header__nav-scroll .navbar-nav {
+  padding: 0 !important;
+}
+
 /* ============= Banner ============== */
 
 .banner__img {
@@ -169,14 +177,22 @@ section:not(.banner) {
   color: var(--orange-color);
 }
 
-.advantegas .item {
+.item {
   padding: 20px;
   box-shadow: 0 0 10px 0px rgba(0,0,0,0.1);
   transition: var(--transition);
 }
 
-.advantegas .item:hover {
+.item:hover {
   box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+}
+
+/* ============= Advantegas ============== */
+
+.products .card-img-top {
+  object-fit: cover;
+  object-position: center;
+  max-height: 200px;
 }
 
 /* ============= Media ============== */
